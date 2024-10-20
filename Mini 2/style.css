@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Merienda:wght@300..900&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('imgg5.avif'); 
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;  
+}
+
+header{
+    margin-top: 240px;
+}
+
+header h1{
+    font-size: 45px;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: "Merienda", cursive;
+    color: aquamarine;
+}
+
+#colorText{
+    color: #fb8ee3;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 25px;
+    margin-left: 135px;
+    font-family: "Handlee", cursive;
+}
+
+#mainPage section{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+#mainPage section p {
+    font-size: 24px;
+    font-family: "Handlee", cursive;
+}
+
+#mainPage section button{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 80px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid rgb(98, 241, 241);
+    background-color: rgb(94, 237, 213);
+    font-family: "Merienda", cursive;
+}
+
+#mainPage section button:hover{
+    color: #fb8ee3;
+    border: 2px dashed aquamarine;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#login{
+    display: none;
+}
+
+#login h1, #categories h1, #questions h1, #winBoard h1{
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 50px;
+    font-family: "Merienda", cursive;
+    display: flex;
+    justify-content: center;
+    color: aquamarine;
+}
+
+#login form{
+    margin-top: 180px;
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    box-shadow: 0 0 20px 25px rgba(243, 203, 154, 0.856);
+}
+
+#login form label{
+    font-size: 20px;
+    color: #fb8ee3;
+}
+
+#login form input{
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+#playButton{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid #fc7ce0;
+    background-color:  #fc7ce0;
+    font-family: "Merienda", cursive;
+    width: 100px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#playButton:hover{
+    color: aquamarine;
+    border: 2px dashed #fb8ee3;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#categories{
+    display: none;
+}
+
+#showCategroies{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.category{
+    width: 300px;
+    height: 265px;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: last baseline;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Handlee", cursive;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category:nth-child(1){
+    background-image: url('cat1.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(2){
+    background-image: url('cat2.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(3){
+    background-image: url('cat3.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.category:nth-child(4){
+    background-image: url('cat4.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(5){
+    background-image: url('cat5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(6){
+    background-image: url('cat6.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category:nth-child(7){
+    background-image: url('cat7.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(8){
+    background-image: url('cat8.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(9){
+    background-image: url('cat9.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:nth-child(10){
+    background-image: url('cat10.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.category:hover{
+    /* transform: translateY(-20px); */
+    transform: scale(1.1);
+}
+
+#questions{
+    display: none;
+}
+
+#showQuestions{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#turn{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 40px;
+   font-weight: bold;
+    letter-spacing: 2px;
+    color:pink;
+    font-family: "Handlee", cursive;
+}
+
+.questionOption
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.questionsBlock{
+    padding: 30px;
+    font-size: 22px;
+    width: 650px;
+}
+
+.questionText{
+    font-family: "Merienda", cursive;
+}
+
+.questionFieldset{
+    border: 8px solid rgba(239, 75, 165, 0.861); 
+    position: relative; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 10px; 
+     box-shadow: 
+     10px 10px 25px 10px rgba(237, 87, 187, 0.689), 
+     10px 5px 30px 15px rgba(0, 204, 255, 0.651); 
+}
+
+.questionLegend{
+    font-size: 25px;
+    color: rgba(247, 194, 95, 0.945);
+    z-index: 1; 
+    position: relative;
+    background-color: transparent;
+    margin-top: -30px;
+    font-weight: bold;
+}
+
+.questionsBlock ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.questionsBlock li{
+    transition: transform 0.2s; 
+    border: 2px solid rgba(247, 95, 247, 0.632);
+    border-radius: 30px;
+    font-size: 20px;
+    width: 250px;
+    padding: 12px;
+    cursor: pointer;
+    font-family: "Handlee", cursive;
+}
+
+.questionsBlock li:hover{
+    transform: scale(1.1);
+}
+
+.scoresDiv h2{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: palevioletred;
+    font-family: "Handlee", cursive;
+}
+
+.scoresDiv p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: "Handlee", cursive;
+}
+
+.scoresDiv button{
+    margin-top: 20px;
+    padding: 20px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Merienda", cursive;
+}
+
+#backButton{
+    background-color:lightblue;
+    margin-right: 200px;
+}
+
+#backButton:hover{
+    color:lightblue;
+    border: 2px dashed lightblue;
+    background-color: transparent;
+}
+
+#quitButton{
+    background-color:plum;
+}
+
+#quitButton:hover{
+    color:plum;
+    border: 2px dashed plum;
+    background-color: transparent;
+}
+
+#winBoard{
+    display: none;
+}
+
+#winBoard h3{
+    color: magenta;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: 50px;
+    font-family: "Handlee", cursive;
+}
+
+#winBoard p{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    font-family: "Handlee", cursive;
+}
+
+#winBoard :nth-child(3){
+    font-family: "Merienda", cursive;
+    color:aqua;
+}
+
+@media (max-width : 850px){
+    body{
+        background-image: url('img6.jpg');
+    }
+    header{
+        margin-top: 150px;
+    }
+
+    header h1{
+        font-size: 35px;
+    }
+    
+    header p {
+        font-size: 25px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #mainPage section {
+       margin-top: 100px;
+       margin-left: 0px;
+    } 
+    #mainPage section p {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    #mainPage section button{
+        padding: 10px;
+        margin-left: 190px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:550px){
+    header h1{
+        font-size: 30px;
+    }
+    header p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:460px){
+    header h1{
+        font-size: 25px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    #mainPage section p {
+        font-size: 16px;
+    }
+    #mainPage section button{
+        padding: 8px;
+        font-size: 12px;
+        margin-left: 130px;
+    }
+}
+
+@media (max-width:750px){
+    #login form{
+        margin-top: 180px;
+        width: 400px;
+        height: auto;
+    }
+    #playButton{
+        margin-left: 150px;
+    }
+
+}
+@media (max-width:600px){
+    #login form{
+        margin-top: 180px;
+        width: 350px;
+        height: auto;
+        margin-left: 22px;
+    }
+    #playButton{
+        margin-left: 120px;
+        padding: 12px;
+    }
+}
+@media (max-width:500px){
+    #login form{
+        margin-top: 180px;
+        width: 300px;
+        height: auto;
+        margin-left: 22px;
+        margin-left: 25px;
+    }
+    #login h1{
+        font-size: 25px;
+    }
+    #playButton{
+        margin-left: 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:1380px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 100px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:1170px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 60px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:1100px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 150px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:850px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 70px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:750px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:700px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 50px;
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:500px){
+    #showCategroies{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 50px;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    #categories h1{
+        font-size: 25px;
+    }
+    .category{
+        width: 250px;
+        height: 215px;
+    }
+}
+
+@media (max-width:410px){
+    #showCategroies{
+        margin-left: 45px;
+    }
+    #categories h1{
+        font-size: 20px;
+    }
+    .category{
+        width: 200px;
+        height: 165px;
+    }
+}
+
+@media (max-width:930px){
+    .questionsBlock{
+        width: 600px;
+    }   
+}
+
+@media (max-width:860px){
+    .questionsBlock{
+        width: 550px;
+    }   
+    .questionsBlock li{
+        width: 220px;
+    }
+}
+
+@media (max-width:780px){
+    .questionsBlock{
+        width: 500px;
+        font-size: 18px;
+    }   
+    .questionsBlock li{
+        width: 200px;
+    }
+}
+
+@media (max-width:700px){
+    .questionsBlock{
+        width: 450px;
+        font-size: 16px;
+        padding: 20px;
+    }   
+    .questionsBlock li{
+        width: 160px;
+    }
+}
+
+@media (max-width:650px){
+    .questionsBlock{
+        width: 400px;
+        font-size: 14px;
+        padding: 10px;
+    }   
+    .questionsBlock li{
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:570px){
+    .questionsBlock{
+        width: 350px;
+        font-size: 12px;
+        padding: 4px;
+    }   
+    .questionsBlock li{
+        width: 120px;
+        font-size: 12px;
+    }
+    .questionsBlock ul{
+        padding: 0px;
+    }
+}
+@media (max-width:480px){
+    #questions h1, #winBoard h1{
+        font-size: 22px;
+    }
+    .questionsBlock{
+        width: 300px;
+        font-size: 10px;
+        padding: 0px;
+    }   
+    .questionsBlock li{
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:430px){
+    .scoresDiv h2{
+        font-size: 25px;
+    }
+    .scoresDiv p{
+        font-size: 20px;
+    }
+
+    .scoresDiv button{
+        padding: 10px;
+    }
+    #backButton{
+        margin-right: 60px;
+    }
+}
+
+@media (max-width:580px){
+    #winBoard h3{
+        font-size: 30px;
+    }
+    #winBoard p{
+        font-size: 20px;
+    }
+}
